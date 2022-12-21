@@ -59,7 +59,7 @@ if (_autoLoadTime >= 0) then
 A3A_setupPlayer = objNull;
 
 private _fnc_validAdmin = {
-    admin owner _this == 2 or						// non-voted admin on DS
+    admin owner _this > 0 ||						// non-voted admin on DS
     {_this isEqualTo player and hasInterface}		// localhost. returns admin owner _this = 0 for some reason
 };
 
