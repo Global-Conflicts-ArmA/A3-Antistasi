@@ -20,10 +20,6 @@ class CfgFunctions {
 			class vehicleArsenal {};
 
 		};
-		class JND {
-			file = QPATHTOFOLDER(JND);
-			class debugv2 {postinit = 1;};
-		};
 
 		class JNG {
 			file = QPATHTOFOLDER(JNG);
